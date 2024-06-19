@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>three.js webgl - orbit controls</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="info">
+        <a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - orbit controls
+    </div>
+
+    <!-- Incluye Ammo.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ammo.js/2.0.0/ammo.wasm.js"></script>
+
+    <!-- Mapa de importación para Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./build/three.module.js",
+                "three/jsm/": "./jsm/",
+                "three/libs/": "./libs/"
+            }
+        }
+    </script>
+
+    <!-- Script principal de tu aplicación Three.js -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
